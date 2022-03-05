@@ -6,12 +6,10 @@ The files in this repository were used to configure the network depicted below.
     
 | Name          | Function       | IP Address                 | Operating System |
 |---------------|----------------|----------------------------|------------------|
-| Azure Network VM| Gateway        | 10.0.0.4                   | Linux            |
-| Elk Server            | Web Server     | 10.0.0.5                   | Linux            |
-| Capstone/Web server / Target   | Web Server     | 10.0.0.6                   | Linux            |
-| Kali Server/ Attacker             | Elk Server     | 10.1.0.4\52.188.227.87     | Linux            |
-| Load Balancer   | Load Balancer  | 20.124.128.228             | Linux            |
-| Work Station    | Access Control | Public IP                  | Linux            |
+| Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |                  |
+| Elk Server          | Log Server | 192.168.1.100            | Ubuntu Linux     |
+| Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
+| Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
 ## Red Team: Security Assessment
 

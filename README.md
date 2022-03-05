@@ -39,10 +39,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 #### Exploitation: 
 - Brute Force Vulnerabilities: 
 	- **Tools and Processes**: Used Hydra to execute a brute force dictionary attack through bash to get the password for Ashton’s account. 
-	- **Achievements**: 
-			<p>The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder,
-                         which had a hash of Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access 
-                         to Webdav on 192.168.1.105. </p>
+	- **Achievements**: The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder, which had a hash of Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access to Webdav on 192.168.1.105. </p>
  
 - Sensitive Information Disclosure:
 	- Tools and Processes: A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP.   

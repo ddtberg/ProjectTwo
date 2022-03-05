@@ -77,43 +77,36 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 ### Hardening: Proposed Alarms and Mitigation Strategies
 - **Blocking the Port Scan**: 
-	- Alarm:
-		- Report Purpose: To detect future port scans.
-		- Report detection standard: Number of ports accessed per second from the same IP. 
-			- Excluding: 
-				- Source.IP / Destination.IP: 192.168.1.105,
-				- Source.port / Destination.port: 22, 80
-		- Alarm Threshold: Alert sent via email, if 5 or more detections occur per second, per same IP address. 
+	- **Alarm**:
+		- **Report Purpose**: To detect future port scans.
+		- **Report detection standard**: Number of ports accessed per second from the same IP. 
+			- **Excluding**: 
+				- **Source.IP / Destination.IP**: 192.168.1.105,
+				- **Source.port / Destination.port**: 22, 80
+		- **Alarm Threshold**: Alert sent via email, if 5 or more detections occur per second, per same IP address. 
 - **System Hardening**: 
-	- Firewall block all incoming and outgoing scans except for necessary ports: 
-        	- Currently only ports 80 and 22 are open. Port 80 can be left open since it’s a web server, but port 22 could be potentially closed.  
+	- **Firewall block all incoming and outgoing scans except for necessary ports**: 
+		- Currently only ports 80 and 22 are open. Port 80 can be left open since it’s a web server, but port 22 could be potentially closed.  
         	- Ways to prevent specific port scanning techniques: 
         	- Disabling ICMP on the firewall or router for external traffic, while enabling for internal uses could prevent general ping scans. However, an IDS would likely be needed for TCP Connect or TCP Half Open port scans. Additionally, only more recent IDS versions are able to detect some stealth scanning techniques.
 
 - **Finding the request for the Hidden Directory**:
-	- Alarm:
-		- Report Purpose: To detect unauthorized access to the hidden directory.
-		- Report detection standard: Number of times the hidden directory has been accessed. Focusing on the Source.ip. 
-	       
-                    Excluding: 
-	                    Source.ip: 192.168.1.105
-
-                Alarm Threshold: Alert sent via email, if any attempts to access the folder. Some will likely be authorized,
-                                but it would be good to know if any access did occur. 
-				
-            - System Hardening: 
-                Disable directory listing in apache to remove indexes for directory information.
-
-                Modify the httpd.conf file on the web server to block access to unauthorized files if their IP is not listed. 
+	- **Alarm**:
+		- **Report Purpose**: To detect unauthorized access to the hidden directory.
+		- **Report detection standard**: Number of times the hidden directory has been accessed. Focusing on the Source.ip. 
+			- **Excluding**:
+				- **Source.ip**: 192.168.1.105
+		-  Alarm Threshold: Alert sent via email, if any attempts to access the folder. Some will likely be authorized, but it would be good to know if any access did occur. 
+	- **System Hardening**: 
+		- Disable directory listing in apache to remove indexes for directory information.
+		- Modify the httpd.conf file on the web server to block access to unauthorized files if their IP is not listed. 
                      >nano /etc/httpd/conf/httpd.conf
                          <Directory/var/www/company_folders/secret_folder/>
                             Order allow, deny
                                 Allow from 192.168.1.105
                                 Deny from 192.168.1.90
                          </Directory>
-
-                 This allows you to enable access for the web server, but preclude access from the attacker. This can be expanded to other
-                 desired ranges for both allowance or denial. 
+		 - This allows you to enable access for the web server, but preclude access from the attacker. This can be expanded to other desired ranges for both allowance or denial. 
 
         - Preventing Brute Force Attacks: 
 	

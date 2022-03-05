@@ -22,16 +22,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
  
  
  
- 
- 
- 
- 
- 
- 
- 
- #### asdf 
- 
-    Vulnerability Assesssment: 
+#### Vulnerability Assesssment: 
     <details>
         - Brute Force Vulnerabilities: 
             Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks. 
@@ -48,7 +39,9 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	    
             Impact: Allows attackers to gain access, and run malicious scripts to allow establish reverse shell.
      </details>
-    **Exploitation**: 
+     
+
+####   	Exploitation: 
         - Brute Force Vulnerabilities: 
 	
             Tools and Processes: Used Hydra to execute a brute force dictionary attack through bash to get the password for Ashton’s account. 

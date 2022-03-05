@@ -84,11 +84,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 				- **Source.IP / Destination.IP**: 192.168.1.105,
 				- **Source.port / Destination.port**: 22, 80
 		- **Alarm Threshold**: Alert sent via email, if 5 or more detections occur per second, per same IP address. 
-- **System Hardening**: 
-	- **Firewall block all incoming and outgoing scans except for necessary ports**: 
-		- Currently only ports 80 and 22 are open. Port 80 can be left open since it’s a web server, but port 22 could be potentially closed.  
-        	- Ways to prevent specific port scanning techniques: 
-        	- Disabling ICMP on the firewall or router for external traffic, while enabling for internal uses could prevent general ping scans. However, an IDS would likely be needed for TCP Connect or TCP Half Open port scans. Additionally, only more recent IDS versions are able to detect some stealth scanning techniques.
+	- **System Hardening**: 
+		- **Firewall block all incoming and outgoing scans except for necessary ports**: 
+			- Currently only ports 80 and 22 are open. Port 80 can be left open since it’s a web server, but port 22 could be potentially closed.  
+			- Ways to prevent specific port scanning techniques: 
+			- Disabling ICMP on the firewall or router for external traffic, while enabling for internal uses could prevent general ping scans. However, an IDS would likely be needed for TCP Connect or TCP Half Open port scans. Additionally, only more recent IDS versions are able to detect some stealth scanning techniques.
 
 - **Finding the request for the Hidden Directory**:
 	- **Alarm**:

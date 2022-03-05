@@ -4,6 +4,15 @@ Description: As a group we performed a security assessment against a target from
 
 <h1>Network Topology:</h1>
 
+
+
+
+
+
+
+
+
+
     - ![Network Diagram]()
     
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.

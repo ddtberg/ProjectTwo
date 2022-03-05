@@ -71,8 +71,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 ### Blue Team: Log Analysis and Attack Characterization
 
-    Analysis: 
-        - Identifying the port Scan: 
+##### -  Identifying the port Scan: 
 	
             Time port scan occurred: February 7th at 4:30
 	    
@@ -81,8 +80,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             IP address that sent sent packets: 192.168.1.90
 	    
             Indicator of a port scan: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
-	    
-        - Finding the Request for the Hidden Directory:
+##### -  Finding the Request for the Hidden Directory:
             Time the request occurred: February 7th between 4:40 and 4:45
 	    
             Number of requests made: 15,472
@@ -91,13 +89,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	    
             Files contained:  Instructions how to connect to the WebDav on the server.
 	    
-        - Uncovering the Brute Force Attack: 
+#### - Uncovering the Brute Force Attack: 
 	
             Number of requests made during the attack: 15, 472
 	    
             Time the password was successfully hacked: Feb 7, 4:42:36
 	    
-        - Finding the WebDav Connection: 
+#### - Finding the WebDav Connection: 
 	
             Total Number of requests made to the Webdav directory: 230
 	    

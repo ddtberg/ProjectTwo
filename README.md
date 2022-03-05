@@ -66,7 +66,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             photos
     
 
-## Blue Team: Log Analysis and Attack Characterization
+# Blue Team: Log Analysis and Attack Characterization
 
     Analysis: 
         - Identifying the port Scan: 

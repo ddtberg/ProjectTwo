@@ -18,7 +18,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
- Red Team: Security Assessment
+ **Red Team: Security Assessment**
  
  
  
@@ -31,7 +31,7 @@ Vulnerability Assesssment:
         - Sensitive Information Disclosure:
             Description: Allows users browser to read full contents of directories on web server.
 	    =
-#### asdf 
+asdf 
             Impact: Allowed attackers to determine location and means to access: /company_folders/secret_folder/
 	    
         - File Upload Vulnerabilities: 
@@ -39,7 +39,7 @@ Vulnerability Assesssment:
 	    
             Impact: Allows attackers to gain access, and run malicious scripts to allow establish reverse shell.
 
-####   	Exploitation: 
+**Exploitation**: 
         - Brute Force Vulnerabilities: 
 	
             Tools and Processes: Used Hydra to execute a brute force dictionary attack through bash to get the password for Ashton’s account. 

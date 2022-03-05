@@ -68,12 +68,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	    
 	- **Files contained**:  Instructions how to connect to the WebDav on the server.
 	    
-- Uncovering the Brute Force Attack: 
+- **Uncovering the Brute Force Attack**: 
 	
 	- **Number of requests made during the attack**: 15, 472
 	- **Time the password was successfully hacked**: Feb 7, 4:42:36
 	    
-- Finding the WebDav Connection: 
+- **Finding the WebDav Connection**: 
 	
             Total Number of requests made to the Webdav directory: 230
 	    
@@ -81,7 +81,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 		
                 WebDav/shell.php - 134 requests
 
-- Hardening: Proposed Alarms and Mitigation Strategies
+### Hardening: Proposed Alarms and Mitigation Strategies
 
         - Blocking the Port Scan: 
 	

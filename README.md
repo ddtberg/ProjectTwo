@@ -44,46 +44,36 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Sensitive Information Disclosure**:
 	- **Tools and Processes**: A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP. There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders, such as company_folder/ secret_folder.
 	- **Achievements**: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
-
-             - ![Network Diagram]()
+	- ![Network Diagram]()
 	     
-        - File Upload Vulnerabilities: 
-	
-            Tools and Processes: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server 
-                                 in the webdav directory. Then the file was accessed via browser and it was then executed. 
-				 
-            Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up 
-                          the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
-            photos
+- **File Upload Vulnerabilities**: 
+	- Tools and Processes: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. Then the file was accessed via browser and it was then executed. 
+	- Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
     
 
 ### Blue Team: Log Analysis and Attack Characterization
 
-##### -  Identifying the port Scan: 
-	
-            Time port scan occurred: February 7th at 4:30
-	    
-            Number of packets sent: 25,046
-	    
-            IP address that sent sent packets: 192.168.1.90
+-  **Identifying the port Scan**: 
+	- **Time port scan occurred**: February 7th at 4:30 
+	- **Number of packets sent**: 25,046
+	- **IP address that sent sent packets**: 192.168.1.90
 	    
             Indicator of a port scan: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
-##### -  Finding the Request for the Hidden Directory:
-            Time the request occurred: February 7th between 4:40 and 4:45
+-  **Finding the Request for the Hidden Directory**:
+	- **Time the request occurred**: February 7th between 4:40 and 4:45
 	    
-            Number of requests made: 15,472
+	- **Number of requests made**: 15,472
 	    
-            Files requested: “connect_to_corp_server” 
+	- **Files requested**: “connect_to_corp_server” 
 	    
-            Files contained:  Instructions how to connect to the WebDav on the server.
+	- **Files contained**:  Instructions how to connect to the WebDav on the server.
 	    
-#### - Uncovering the Brute Force Attack: 
+- Uncovering the Brute Force Attack: 
 	
-            Number of requests made during the attack: 15, 472
+	- **Number of requests made during the attack**: 15, 472
+	- **Time the password was successfully hacked**: Feb 7, 4:42:36
 	    
-            Time the password was successfully hacked: Feb 7, 4:42:36
-	    
-#### - Finding the WebDav Connection: 
+- Finding the WebDav Connection: 
 	
             Total Number of requests made to the Webdav directory: 230
 	    
@@ -91,7 +81,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 		
                 WebDav/shell.php - 134 requests
 
-### Hardening: Proposed Alarms and Mitigation Strategies
+- Hardening: Proposed Alarms and Mitigation Strategies
 
         - Blocking the Port Scan: 
 	

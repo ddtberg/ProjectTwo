@@ -24,8 +24,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
  
 Vulnerability Assesssment: 
 - Brute Force Vulnerabilities: 
-		Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks.
-		Impact: Brute force attacks succeed in allowing access to confidential information that led to compromising the webserver.
+	- Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks.
+	- Impact: Brute force attacks succeed in allowing access to confidential information that led to compromising the webserver.
 - Sensitive Information Disclosure:
             Description: Allows users browser to read full contents of directories on web server.
 	    =

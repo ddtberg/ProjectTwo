@@ -30,18 +30,23 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
     Exploitation: 
         - Brute Force Vulnerabilities: 
             Tools and Processes: Used Hydra to execute a brute force dictionary attack through bash to get the password for Ashton’s account. 
-            Achievements: The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder, which had a hash of                             Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access to Webdav on 192.168.1.105. 
+            Achievements: The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder,
+                          which had a hash of Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access 
+                          to Webdav on 192.168.1.105. 
             photos
         - Sensitive Information Disclosure:
-            Tools and Processes:A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP.                                                           There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders, such as    
+            Tools and Processes:A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP.   
+                                There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders, such as    
                                 company_folder/ secret_folder 
-            Achievements: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
+            Achievements: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. 
+                          This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
 
             photos
         - File Upload Vulnerabilities: 
             Tools and Processes: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. 
-Then the file was accessed via browser and it was then executed. 
-            Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
+                                 Then the file was accessed via browser and it was then executed. 
+            Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection 
+                          from the target machine to the attack machine, establishing the reverse shell.
             photos
     
 

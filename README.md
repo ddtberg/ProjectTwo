@@ -19,6 +19,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
  ### Red Team: Security Assessment
  
+ 
     Vulnerability Assesssment: 
     <details>
         - Brute Force Vulnerabilities: 

@@ -28,8 +28,8 @@ Vulnerability Assesssment:
 	
 - Sensitive Information Disclosure:
 	- Description: Allows users browser to read full contents of directories on web server. 
-	    
-         - Impact: Allowed attackers to determine location and means to access: /company_folders/secret_folder/
+	
+	- Impact: Allowed attackers to determine location and means to access: /company_folders/secret_folder/
 	    
  - File Upload Vulnerabilities: 
  	- Description: Allows access into confidential files on a site and ability to copy malicious scripts onto a target server.

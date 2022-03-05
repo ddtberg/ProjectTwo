@@ -1,5 +1,5 @@
 ## Red v. Blue Project
-The files in this repository were used to configure the network depicted below.
+Description: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
 
 ## Network Topology: 
     - ![Network Diagram]()

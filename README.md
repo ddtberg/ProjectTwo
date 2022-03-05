@@ -28,8 +28,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
         - Finding the Request for the Hidden Directory
         - Uncovering the Brute Force Attack
         - Finding the WebDav Connection
-        
-    Mitigation: 
+## Hardening: Proposed Alarms and Mitigation Strategies
         - Blocking the Port Scan: 
             - Alarm:
             - System Hardening: 
@@ -44,9 +43,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             - System Hardening: 
         - Identifying Reverse Shell Uploads: 
             - Alarm:
-            - System Hardening: 
-
-## Hardening: Proposed Alarms and Mitigation Strategies
+            - System Hardening:
 
 
 

@@ -16,7 +16,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
- ## Red Team: Security Assessment
+ ### Red Team: Security Assessment
  
     Vulnerability Assesssment: 
         - Brute Force Vulnerabilities: 
@@ -65,7 +65,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             photos
     
 
-# Blue Team: Log Analysis and Attack Characterization
+### Blue Team: Log Analysis and Attack Characterization
 
     Analysis: 
         - Identifying the port Scan: 
@@ -101,7 +101,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 		
                 WebDav/shell.php - 134 requests
 
-## Hardening: Proposed Alarms and Mitigation Strategies
+### Hardening: Proposed Alarms and Mitigation Strategies
 
         - Blocking the Port Scan: 
 	

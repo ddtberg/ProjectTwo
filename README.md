@@ -39,8 +39,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
                                 There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders,
                                 such as company_folder/ secret_folder 
             Achievements: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to  
-                          192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 
-                          192.168.1.105
+                          192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the 
+                          reverse shell from 192.168.1.105
 
              - ![Network Diagram]()
         - File Upload Vulnerabilities: 

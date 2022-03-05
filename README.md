@@ -109,12 +109,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 		 - This allows you to enable access for the web server, but preclude access from the attacker. This can be expanded to other desired ranges for both allowance or denial. 
 
 - **Preventing Brute Force Attacks**: 
-	- Alarm:
-		- Report Purpose: To detect future brute force attacks. 
-		- Report detection standard: To detect Http.response.status_code: 401 related to the url.path:”/company_folders/secret_folder/" using http.request:”get” and user_agent.original :"Mozilla/4.0 (Hydra)"
-		- Alarm Threshold: Alert email and log when the number of those specific errors reach more than 1,000 within a minute. 
-	- System Hardening:
-		- A Stronger password policy would greatly help here:
+	- **Alarm**:
+		- **Report Purpose**: To detect future brute force attacks. 
+		- **Report detection** standard: To detect Http.response.status_code: 401 related to the url.path:”/company_folders/secret_folder/" using http.request:”get” and user_agent.original :"Mozilla/4.0 (Hydra)"
+		- **Alarm Threshold**: Alert email and log when the number of those specific errors reach more than 1,000 within a minute. 
+	- **System Hardening**:
+		- **A Stronger password policy would greatly help here**:
 			- Limit login attempts 
 			- Two factor authentication
                     	- CAPTCHA
@@ -122,11 +122,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
                    	- Limit login attempts to those only from specific ip ranges. 
                     	- Create unique login URLs for different user groups 
 - **Detecting the WebDav Connection**: 
-	- Alarm:
-		- Report Purpose: To detect unauthorized access of the webdav directory.
-		- Report detection standard: The number of the times the webdav directory has been accessed using: http.request.method:* and url.path: *webdav* 
-		- Alarm Threshold: Alert email and log when any access has occurred in the webdav directory.
-	- System Hardening: 
+	- **Alarm**:
+		- **Report Purpose**: To detect unauthorized access of the webdav directory.
+		- **Report detection standard**: The number of the times the webdav directory has been accessed using: http.request.method:* and url.path: *webdav* 
+		- **Alarm Threshold**: Alert email and log when any access has occurred in the webdav directory.
+	- **System Hardening**: 
 		- As before, you can modify the httpd.conf file on the web server to block access to the Webdav directory if their IP is not listed or is labeled under deny.
                        >nano /etc/httpd/conf/httpd.conf
                          <Directory/var/www/company_folders/secret_folder/>
@@ -139,12 +139,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             
             
 - **Identifying Reverse Shell Uploads**: 
-	- Alarm:
-		- Report Purpose: To detect unauthorized file uploads. 
- 		- Report detection standard: The number of file uploads to the webdav directory utilizing: http.method: “put”, and url.path: *webdav* 
- 		- Alarm Threshold: Alert email and log when access when any file is placed in the webdav directory. 
-	- System Hardening:
-		- Preventing or limiting the ability to execute files uploaded to the server:
+	- **Alarm**:
+		- **Report Purpose**: To detect unauthorized file uploads. 
+ 		- **Report detection standard**: The number of file uploads to the webdav directory utilizing: http.method: “put”, and url.path: *webdav* 
+ 		- **Alarm Threshold**: Alert email and log when access when any file is placed in the webdav directory. 
+	- **System Hardening**:
+		- **Preventing or limiting the ability to execute files uploaded to the server**:
 			- Scramble uploaded file names and extensions
 			- Specifically define valid types of files that the user is allowed to upload.  
 			- Require authentication to upload files

@@ -78,12 +78,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 ### Hardening: Proposed Alarms and Mitigation Strategies
 - **Blocking the Port Scan**: 
 	- Alarm:
-	- Report Purpose: To detect future port scans.
-	- Report detection standard: Number of ports accessed per second from the same IP. 
-		- Excluding: 
-			- Source.IP / Destination.IP: 192.168.1.105,
-			- Source.port / Destination.port: 22, 80
-	- Alarm Threshold: Alert sent via email, if 5 or more detections occur per second, per same IP address. 
+		- Report Purpose: To detect future port scans.
+		- Report detection standard: Number of ports accessed per second from the same IP. 
+			- Excluding: 
+				- Source.IP / Destination.IP: 192.168.1.105,
+				- Source.port / Destination.port: 22, 80
+		- Alarm Threshold: Alert sent via email, if 5 or more detections occur per second, per same IP address. 
 - **System Hardening**: 
 	- Firewall block all incoming and outgoing scans except for necessary ports: 
         	- Currently only ports 80 and 22 are open. Port 80 can be left open since it’s a web server, but port 22 could be potentially closed.  

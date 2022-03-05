@@ -18,11 +18,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
- ### Red Team: Security Assessment
+ Red Team: Security Assessment
  
  
  
-#### Vulnerability Assesssment: 
+Vulnerability Assesssment: 
         - Brute Force Vulnerabilities: 
             Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks. 
 	    

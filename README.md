@@ -100,12 +100,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	- **System Hardening**: 
 		- Disable directory listing in apache to remove indexes for directory information.
 		- Modify the httpd.conf file on the web server to block access to unauthorized files if their IP is not listed. 
-                     >nano /etc/httpd/conf/httpd.conf
-                         <Directory/var/www/company_folders/secret_folder/>
-                            Order allow, deny
-                                Allow from 192.168.1.105
-                                Deny from 192.168.1.90
-                         </Directory>
+                     	>nano /etc/httpd/conf/httpd.conf
+                        	 <Directory/var/www/company_folders/secret_folder/>
+                          	  Order allow, deny
+                               	 	Allow from 192.168.1.105
+                               	 	Deny from 192.168.1.90
+                        	 </Directory>
 		 - This allows you to enable access for the web server, but preclude access from the attacker. This can be expanded to other desired ranges for both allowance or denial. 
 
 - **Preventing Brute Force Attacks**: 

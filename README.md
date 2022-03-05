@@ -30,7 +30,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	    
         - Sensitive Information Disclosure:
             Description: Allows users browser to read full contents of directories on web server.
-	    
+	    =
+#### asdf 
             Impact: Allowed attackers to determine location and means to access: /company_folders/secret_folder/
 	    
         - File Upload Vulnerabilities: 

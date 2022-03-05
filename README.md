@@ -3,16 +3,6 @@
 Description: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
 
 <h1>Network Topology:</h1>
-
-
-
-
-
-
-
-
-
-
     - ![Network Diagram]()
     
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
@@ -27,6 +17,23 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
  ## Red Team: Security Assessment
+ ## test 2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
     Vulnerability Assesssment: 
         - Brute Force Vulnerabilities: 

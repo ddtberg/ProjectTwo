@@ -57,15 +57,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	- **Time port scan occurred**: February 7th at 4:30 
 	- **Number of packets sent**: 25,046
 	- **IP address that sent sent packets**: 192.168.1.90
-	    
-            Indicator of a port scan: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
+	- **Indicator of a port scan**: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
 -  **Finding the Request for the Hidden Directory**:
 	- **Time the request occurred**: February 7th between 4:40 and 4:45
-	    
 	- **Number of requests made**: 15,472
-	    
 	- **Files requested**: “connect_to_corp_server” 
-	    
 	- **Files contained**:  Instructions how to connect to the WebDav on the server.
 	    
 - **Uncovering the Brute Force Attack**: 
@@ -75,11 +71,9 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	    
 - **Finding the WebDav Connection**: 
 	
-            Total Number of requests made to the Webdav directory: 230
-	    
-                WebDav/ - 96 requests
-		
-                WebDav/shell.php - 134 requests
+	- **Total Number of requests made to the Webdav directory**: 230
+	- **WebDav/** - 96 requests
+	- **WebDav/shell.php** - 134 requests
 
 ### Hardening: Proposed Alarms and Mitigation Strategies
 

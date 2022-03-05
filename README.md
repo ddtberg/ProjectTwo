@@ -18,19 +18,16 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
  ## Red Team: Security Assessment
     Vulnerability Assesssment: 
         - Brute Force Vulnerabilities: 
-	
             Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks. 
 	    
             Impact: Brute force attacks succeed in allowing access to confidential information that led to compromising the webserver.
 	    
         - Sensitive Information Disclosure:
-	
             Description: Allows users browser to read full contents of directories on web server.
 	    
             Impact: Allowed attackers to determine location and means to access: /company_folders/secret_folder/
 	    
         - File Upload Vulnerabilities: 
-	
             Description: Allows access into confidential files on a site and ability to copy malicious scripts onto a target server.
 	    
             Impact: Allows attackers to gain access, and run malicious scripts to allow establish reverse shell.

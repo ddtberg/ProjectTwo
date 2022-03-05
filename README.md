@@ -3,6 +3,7 @@
 Description: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
 
 ### Network Topology:
+
     - ![Network Diagram]()
     
     
@@ -17,8 +18,18 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
- Red Team: Security Assessment
+ ### Red Team: Security Assessment
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #### asdf 
  
     Vulnerability Assesssment: 
     <details>
@@ -68,7 +79,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             photos
     
 
-Blue Team: Log Analysis and Attack Characterization
+### Blue Team: Log Analysis and Attack Characterization
 
     Analysis: 
         - Identifying the port Scan: 
@@ -104,7 +115,7 @@ Blue Team: Log Analysis and Attack Characterization
 		
                 WebDav/shell.php - 134 requests
 
-Hardening: Proposed Alarms and Mitigation Strategies
+### Hardening: Proposed Alarms and Mitigation Strategies
 
         - Blocking the Port Scan: 
 	

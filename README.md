@@ -37,18 +37,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	- **Impact**: Allows attackers to gain access, and run malicious scripts to allow establish reverse shell.
 
 #### Exploitation: 
-- Brute Force Vulnerabilities: 
+- **Brute Force Vulnerabilities**: 
 	- **Tools and Processes**: Used Hydra to execute a brute force dictionary attack through bash to get the password for Ashton’s account. 
-	- **Achievements**: The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder, which had a hash of Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access to Webdav on 192.168.1.105. </p>
+	- **Achievements**: The password for Ashton was successfully found using Hydra. This gave access to the company_folders/secret_folder, which had a hash of Ryan’s password. Reverse engineering the hash gave the password for Ryan’s account and access to Webdav on 192.168.1.105.
  
-- Sensitive Information Disclosure:
-	- Tools and Processes: A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP.   
-                               There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders,
-                                such as company_folder/ secret_folder.
-				
-            Achievements: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to  
-                          192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the 
-                          reverse shell from 192.168.1.105
+- **Sensitive Information Disclosure**:
+	- **Tools and Processes**: A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP. There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders, such as company_folder/ secret_folder.
+	- **Achievements**: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
 
              - ![Network Diagram]()
 	     

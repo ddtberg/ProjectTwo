@@ -5,6 +5,7 @@ Description: As a group we performed a security assessment against a target from
 <h1>Network Topology:</h1>
     - ![Network Diagram]()
     
+    
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 	- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. 
 	- Metricbeat records the metrics and statistics that it has collected and sends them to the output that is specified, such as Elasticsearch or Logstash.

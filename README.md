@@ -18,9 +18,9 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
 
  ### Red Team: Security Assessment
- <br>
  
     Vulnerability Assesssment: 
+    <details>
         - Brute Force Vulnerabilities: 
             Description: Weak password policy. Inability to lockout accounts when failed logins occur during brute force attacks. 
 	    
@@ -35,7 +35,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
             Description: Allows access into confidential files on a site and ability to copy malicious scripts onto a target server.
 	    
             Impact: Allows attackers to gain access, and run malicious scripts to allow establish reverse shell.
-            
+     </details>
     **Exploitation**: 
         - Brute Force Vulnerabilities: 
 	

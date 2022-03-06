@@ -12,7 +12,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
     
 | Name          | Function       | IP Address                 | Operating System |
 |---------------|----------------|----------------------------|------------------|
-| Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |         N/A        |
+| Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |         N/A      |
 | Elk Server          | Log Server | 192.168.1.100            | Ubuntu Linux     |
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |
@@ -57,24 +57,30 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	- **Number of packets sent**: 25,046
 	- **IP address that sent sent packets**: 192.168.1.90
 	- **Indicator of a port scan**: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
- ![Port Scan](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Identifying%20the%20Port%20Scan.png)
+	![Port Scan](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Identifying%20the%20Port%20Scan.png)
 
 -  **Finding the Request for the Hidden Directory**:
 	- **Time the request occurred**: February 7th between 4:40 and 4:45
 	- **Number of requests made**: 15,472
 	- **Files requested**: “connect_to_corp_server” 
 	- **Files contained**:  Instructions how to connect to the WebDav on the server.
+	![Hiddent Directory](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Finding%20the%20request%20for%20the%20Hidden%20Directory.png)
 	    
 - **Uncovering the Brute Force Attack**: 
 	
 	- **Number of requests made during the attack**: 15, 472
 	- **Time the password was successfully hacked**: Feb 7, 4:42:36
+	![Brute Force](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Uncovering%20ther%20Brute%20Force%20Attack.png)
 	    
 - **Finding the WebDav Connection**: 
 	
 	- **Total Number of requests made to the Webdav directory**: 230
-	- **WebDav/** - 96 requests
-	- **WebDav/shell.php** - 134 requests
+		- **WebDav/** - 96 requests
+		- **WebDav/shell.php** - 134 requests
+	![WebDav One](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/WebDav%20Connection%20One.png)
+	- **Time Shell.php was placed in WebDav**: Feb 7, at 4:53:07
+	![WebDavTwo](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/WebDav%20Connection%20Two.png)
+	
 
 ### Hardening: Proposed Alarms and Mitigation Strategies
 - **Blocking the Port Scan**: 

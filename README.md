@@ -57,6 +57,8 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 	- **Number of packets sent**: 25,046
 	- **IP address that sent sent packets**: 192.168.1.90
 	- **Indicator of a port scan**: The sudden influx of traffic indicates at 4:30 would indicate a port scan.
+	- ![Port Scan](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Identifying%20the%20Port%20Scan.png)
+
 -  **Finding the Request for the Hidden Directory**:
 	- **Time the request occurred**: February 7th between 4:40 and 4:45
 	- **Number of requests made**: 15,472

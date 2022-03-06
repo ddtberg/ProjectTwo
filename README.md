@@ -3,7 +3,7 @@
 Project Description: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
 
 ### Network Topology:
-![Network Diagram]()
+![Network Diagram](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/diagram.png)
     
     
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.

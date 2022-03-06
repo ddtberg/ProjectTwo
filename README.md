@@ -1,6 +1,6 @@
 ## Red v. Blue Project
 
-Project Description: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
+**Project Description**: As a group we performed a security assessment against a target from the both offensive and defensive perspectives. Individually, we're presenting the findings to a hypothetical client. 
 
 ### Network Topology:
 ![Network Diagram](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/diagram.png)

@@ -12,7 +12,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
     
 | Name          | Function       | IP Address                 | Operating System |
 |---------------|----------------|----------------------------|------------------|
-| Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |                  |
+| Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |         N/A        |
 | Elk Server          | Log Server | 192.168.1.100            | Ubuntu Linux     |
 | Capstone/Web server | Target     | 192.168.1.105            | Ubuntu Linux     |
 | Kali computer       |  Attacker  | 192.168.1.90             | Kali Linux       |

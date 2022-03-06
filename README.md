@@ -69,6 +69,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Uncovering the Brute Force Attack**: 
 	
 	- **Number of requests made during the attack**: 15, 472
+	![Brute Force](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Brute%20Force%20Two.png)
 	- **Time the password was successfully hacked**: Feb 7, 4:42:36
 	![Brute Force](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Uncovering%20ther%20Brute%20Force%20Attack.png)
 	    

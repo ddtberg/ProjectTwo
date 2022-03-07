@@ -5,11 +5,6 @@
 ### Network Topology:
 ![Network Diagram](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/diagram.png)
     
-    
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-	- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. 
-	- Metricbeat records the metrics and statistics that it has collected and sends them to the output that is specified, such as Elasticsearch or Logstash.
-    
 | Name          | Function       | IP Address                 | Operating System |
 |---------------|----------------|----------------------------|------------------|
 | Azure Network VM    | Gateway    | 10.0.0.43 / 192.168.1.1  |         N/A      |
@@ -43,11 +38,10 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Sensitive Information Disclosure**:
 	- **Tools and Processes**: A web browser accessed the apache web server and was able to access the webpage: 192.168.1.105 over HTTP. There, company_folder was accessible. This allows a potential attacker to drill down to unauthorized folders, such as company_folder/ secret_folder.
 	- **Achievements**: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
-	- ![Network Diagram]()
-	     
+
 - **File Upload Vulnerabilities**: 
-	- Tools and Processes: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. Then the file was accessed via browser and it was then executed. 
-	- Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
+	- **Tools and Processes**: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. Then the file was accessed via browser and it was then executed. 
+	- **Achievements**: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
     
 
 ### Blue Team: Log Analysis and Attack Characterization
@@ -69,6 +63,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Uncovering the Brute Force Attack**: 
 	
 	- **Number of requests made during the attack**: 15, 472
+	![Brute Force](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Brute%20Force%20Two.png)
 	- **Time the password was successfully hacked**: Feb 7, 4:42:36
 	![Brute Force](https://github.com/ddtberg/ProjectTwo/blob/main/Pictures/Uncovering%20ther%20Brute%20Force%20Attack.png)
 	    

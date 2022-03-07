@@ -40,8 +40,8 @@
 	- **Achievements**: Using Ashton’s account info, I was able to access unauthorized material when I drilled down to 192.168.1.105/company_folders/secret_folder. This enabled me to get info on Ryan’s account and then instigate the reverse shell from 192.168.1.105
 
 - **File Upload Vulnerabilities**: 
-	- Tools and Processes: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. Then the file was accessed via browser and it was then executed. 
-	- Achievements: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
+	- **Tools and Processes**: Having the password to Ryan’s account, a reverse shell php malicious payload was placed on the Web Server in the webdav directory. Then the file was accessed via browser and it was then executed. 
+	- **Achievements**: The attack machine executed the default handler with msfconsole and once the php scripted was executed it opened up the port to establish the connection from the target machine to the attack machine, establishing the reverse shell.
     
 
 ### Blue Team: Log Analysis and Attack Characterization
